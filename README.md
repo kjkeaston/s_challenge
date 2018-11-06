@@ -132,12 +132,13 @@ Description: Included below are credentials to access an example data set in a P
 =======================================================================================
 Postgres cluster credentials:
 =======================================================================================
-*Hostname: ec2-54-83-194-117.compute-1.amazonaws.com
-*Password: AbVv-wMQGmbOwFpeSdw9paFipJ
-*Username: ujzapgrhcborxq
-*Port: 5432
-*Database: dbt6sotajkgv26
-*Schema: music_is_me
+
+* Hostname: ec2-54-83-194-117.compute-1.amazonaws.com
+* Password: AbVv-wMQGmbOwFpeSdw9paFipJ
+* Username: ujzapgrhcborxq
+* Port: 5432
+* Database: dbt6sotajkgv26
+* Schema: music_is_me
 
 
 =======================================================================================
@@ -192,7 +193,7 @@ This would matter based on the data type for the plan_id column. If the data typ
 Extra Credit: Are there any other insights you were able to uncover when analyzing the data set?
 =======================================================================================
 
-It seems that when a user cancels their account, the plan_name gets saved as ‘Canceled’. This feels very odd as cancelled is not a plan type. Seems like a strange way to handle that information. What would be better is to have a separate column, say ‘plan_canceled’ in the `users` or `user_plans` table that stores a boolean value of whether someone cancels or not. This would be a bit more intuitive and would allow you to see if a certain plan level is more likely to get cancelled over others. 
+It seems that when a user cancels their account, the plan_name gets saved as ‘Canceled’. This feels very odd as canceled is not a plan type. Seems like a strange way to handle that information. What would be better is to have a separate column, say ‘plan_canceled’ in the `users` or `user_plans` table that stores a boolean value of whether someone cancels or not. This would be a bit more intuitive and would allow you to see if a certain plan level is more likely to get canceled over others. 
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
